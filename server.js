@@ -5,7 +5,7 @@ const http = require('http');
 const fs = require('fs');
 
 // Require minimist module (make sure you install this one via npm).
-var minimist = require('minimist')
+var minimist = require('minimist');
 
 // Use minimist to process one argument `--port=` on the command line after `node server.js`.
 const args = minimist(process.argv.slice(2));
@@ -28,9 +28,6 @@ fs.readFile('./public/index.html', (err, data) => {
 });
 // If there is an error, put it on the console error and return. 
 // Do not be nice about exiting.
-
-
-
 
 
 // Define a const `server` as an arrow function using http.createServer. 
